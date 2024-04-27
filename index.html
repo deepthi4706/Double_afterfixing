@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tales</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #fef6e4; /* Lighter background for better contrast */
+        }
+        header, footer {
+            background-color: #855E42; /* Darker color for better contrast */
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .content {
+            margin: 20px;
+            text-align: center;
+        }
+        .form-register {
+            background-color: #dcd0c0; /* Adjusted for better contrast */
+            padding: 20px;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type=email], input[type=password] {
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 1em;
+            background-color: #457B9D; /* Color adjusted for visibility */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Time Tales</h1>
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Historical Fiction Stories</a>
+            <a href="#">Time Travel Adventures</a>
+            <a href="#">Historical Mysteries</a>
+            <a href="#">Author Interviews</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h2>Welcome to Time Tales</h2>
+        <div class="form-register">
+            <h3>Join Us</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="register()">Sign Up</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Time Tales. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function register() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            console.log('Registered with:', email, password);
+            alert('Registration successful!');
+        }
+    </script>
+</body>
+</html>
